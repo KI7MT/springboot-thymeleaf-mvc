@@ -249,13 +249,13 @@ public class StaffController
     
     /**
      * 
-     * POST new {@see com.beam.HcHelpDesk.db.Staff}
+     * POST new {@see com.beam.helpdesk.db.Staff}
      * 
      * @param staffForm
      *            @see {@link resources/staff/add.html}
      * @param errors
      *            if field validations fails.
-     *            {@see com.beam.HcHelpDesk.StaffForm.}
+     *            {@see com.beam.helpdesk.StaffForm.}
      * @return redirect to {@link hostname:potrt/staff/{id}}
      */
     @RequestMapping(value = "/create", method=RequestMethod.POST)
