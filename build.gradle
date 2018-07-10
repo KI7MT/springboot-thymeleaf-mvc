@@ -47,7 +47,6 @@ dependencies {
 	compile("org.webjars:bootstrap:3.3.6")
 	compile("org.postgresql:postgresql:42.2.2")
 	
-	// runtime('mysql:mysql-connector-java')
 	runtime('org.postgresql:postgresql')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
