@@ -9,7 +9,7 @@ artifacts can be run directly from the command line, or installed on a server
 assuming Java is available system wide.
 
 [SpringBoot](https://spring.io/projects/spring-boot) runs an embedded 
-[Tomcat Server](https://tomcat.apache.org/) so there is no requirement to insta
+[Tomcat Server](https://tomcat.apache.org/) so there is no requirement to install
 [Tomcat Server](https://tomcat.apache.org/) system wide just for testing.
 
 ## TO-DO
