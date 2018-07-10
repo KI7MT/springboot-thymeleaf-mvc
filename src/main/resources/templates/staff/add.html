@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/layout">
+  <head>
+    <title>Add Staff Member</title>
+  </head>
+  <body>
+    <div layout:fragment="content">
+      <h1 th:text="${greeting}">(greeting)</h1>
+      <!-- HR SEPARATOR -->
+      <hr>
+      </hr>
+      <!-- ADD FORM -->
+      <form th:object="${staffForm}" th:action="@{/staff/create}" method="post">
+        <!-- FIRST  NAME -->
+        <div class="form-group row">
+          <label for="firstName" class="col-xs-2 form-control-label">First Name</label>
+          <div class="col-xs-5">
+            <input 
+              type="text" 
+              id="firstName" 
+              th:value="*{firstName}" 
+              name="firstName" 
+              placeholder="First name" 
+              class="form-control">
+            </input>
+          </div>
+        </div>
+        <!-- LAST NAME -->
+        <div class="form-group row">
+          <label for="lastName" class="col-xs-2 form-control-label">Last Name</label>
+          <div class="col-xs-5">
+            <input 
+              type="text" 
+              id="lastName" 
+              th:value="*{lastName}" 
+              name="lastName" 
+              placeholder="Last name" 
+              class="form-control">
+            </input>
+          </div>
+        </div>
+        <!-- BADGE CODE -->
+        <div class="form-group row">
+          <label for="badgeCode" class="col-xs-2 form-control-label">Badge Code</label>
+          <div class="col-xs-5">
+            <input 
+              type="text" 
+              id="badgeCode" 
+              th:value="*{badgeCode}" 
+              name="badgeCode" 
+              placeholder="badgeCode" 
+              class="form-control">
+            </input>
+          </div>
+        </div>
+        <!-- SKILL SELECT -->
+        <div class="form-group row">
+          <label for="selectSkill" class="col-xs-2 form-control-label">Skill Level</label>
+          <div class="col-xs-3">
+            <select class="form-control" id="inputSkill" th:field="*{skillLevel}">
+              <option value="Tech-1">Tech-1</option>
+              <option value="Tech-2">Tech-2</option>
+              <option value="Tech-3">Tech-3</option>
+              <option value="Tech-4">Tech-4</option>
+              <option value="Tech-5">Tech-5</option>
+              <option value="Manager">Manager</option>
+            </select>
+          </div>
+        </div>
+        <!-- STATUS SELECT -->
+        <div class="form-group row">
+          <label for="selectStatus" class="col-xs-2 form-control-label">Skill Level</label>
+          <div class="col-xs-3">
+            <select class="form-control" id="inputStatus" th:field="*{status}">
+              <option value="On-Duty">On-Duty</option>
+              <option value="On-Call">On-Call</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <!-- PHONE -->
+        <div class="form-group row">
+          <label for="email" class="col-xs-2 form-control-label">Phone</label>
+          <div class="col-xs-4">
+            <input 
+              type="text" 
+              id="email" 
+              th:value="*{email}"  
+              placeholder="Enter email"
+              class="form-control" >
+            </input>
+          </div>
+        </div>
+        <!-- PHONE -->
+        <div class="form-group row">
+          <label for="phone" class="col-xs-2 form-control-label">Email</label>
+          <div class="col-xs-4">
+            <input 
+              type="text" 
+              id="phone"
+              th:value="*{phone}"  
+              placeholder="Enter email"
+              class="form-control">
+            </input>
+          </div>
+        </div>
+        <!-- HR LINE SEPARATOR -->
+        <hr>
+        </hr>
+        <!-- SUBMIT BUTTON -->
+        <div class="form-group row">
+          <div class="col-sm-offset-0 col-sm-10">
+            <button type="submit" id="addStaff" class="btn btn-primary" data-inline="true">Add Staff</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

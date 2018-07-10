@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Footer</title>
+</head>
+	<body>
+		<footer class="footer" th:fragment="footer">
+			<div class="container border">
+				<div class="row">
+					<div class="text-dark col-auto mr-auto">
+						Copyright &copy; 2018, Greg Beam, Apache 2.0, Sprintboot Demo Application
+						<p th:text="${currentTime}">(currentTime)</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

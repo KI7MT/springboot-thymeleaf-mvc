@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="layout/layout">
+  <head>
+    <title>Staff By ID</title>
+  </head>
+  <body>
+    <div layout:fragment="content">
+      <h1 th:text="${greeting}">(greeting)</h1>
+      <p>Lorem ipsum dolor sit amet, eu in mollis morbi nunc nulla
+        metus, ipsum etiam dictum natoque nec eleifend. Congue nec porttitor.
+      </p>
+      <table class="table table-bordered" width="100%" id="dataTable" cellspacing="0">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>Full Name</th>
+            <th>Skill Level</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr th:each="staff : ${oneStaffMember}">
+            <td th:text="${staff.staffId}"></td>
+            <td th:text="${staff.firstName} + ' ' + ${staff.lastName}"></td>
+            <td th:text="${staff.skillLevel}"></td>
+            <td th:text="${staff.status}"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

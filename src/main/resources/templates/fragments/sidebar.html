@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Header</title>
+  </head>
+  <body>
+    <div th:fragment="sidebar">
+      <div class="panel panel-default">
+        <div class="panel-heading">Staff Stats</div>
+        <div class="panel-body">
+          <div style="padding-bottom: 5px;">
+            <!-- Get the Staff Count -->
+            <li th:text="${staffCounter}">(staffCounter)</li>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Ticket Stats</div>
+        <div class="panel-body">
+          <div style="padding-bottom: 5px;">
+            <!-- Get the Staff Count -->
+            <li th:text="${ticketCounter}">(ticketCounter)</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

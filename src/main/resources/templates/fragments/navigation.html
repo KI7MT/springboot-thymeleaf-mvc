@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Header</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default" th:fragment="navigation">
+      <div class="container">
+        <!-- Home Button -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Home</a>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Staff<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/staff/add">Add Staff</a></li>
+                <li><a href="/staff/list">List All Staff</a></li>
+                <li class="divider"></li>
+                <li><a href="/staff/api">API - List All Staff</a></li>
+                <li><a href="/staff/api/1">API - Staff by Id-1</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+           <!-- Add dropdown menu -->
+          <!--<ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tickets<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="">Add Ticket</a></li>
+                <li><a href="">List All Tickets</a></li>
+              </ul>
+            </li>
+          </ul>-->
+        </div>
+        <!-- About Button -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="nav-item nav-link active" href="/about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
