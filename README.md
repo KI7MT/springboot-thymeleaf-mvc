@@ -7,7 +7,7 @@ and [Hibernate ORM](http://hibernate.org/).
 The build system uses the [Gradle Build Tool](https://gradle.org/). The final
 artifacts can be run directly from the command line, or installed on a server
 assuming Java is available system wide as [SpringBoot](https://spring.io/projects/spring-boot)
-runs an embedded [Tomcat Server](https://tomcat.apache.org/)
+runs an embedded [Tomcat Server](https://tomcat.apache.org/).
 
 ## TO-DO
 * [ ] Finish updating Ticket Controller and Views.
