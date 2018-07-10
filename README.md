@@ -1,11 +1,13 @@
 # Springboot Thymeleaf MVC
 This is a test repository for working with [SpringBoot](https://spring.io/projects/spring-boot),
-[Thymeleaf](https://www.thymeleaf.org/), and PostGreSQL Database via Jpa and
-Hiberte.
+[Thymeleaf](https://www.thymeleaf.org/), and [PostqreSQL](https://www.postgresql.org/)
+Database via [Jpa](http://www.oracle.com/technetwork/articles/javaee/jpa-137156.html)
+and [Hibernate ORM](http://hibernate.org/).
 
-The build system uses [Gradle Build Tool](https://gradle.org/). The final
-artifacts can be run directly from the command line, assuming Java is available
-system wide.
+The build system uses the [Gradle Build Tool](https://gradle.org/). The final
+artifacts can be run directly from the command line, or installed on a server
+assuming Java is available system wide as [SpringBoot](https://spring.io/projects/spring-boot)
+runs an embedded [Tomcat Server](https://tomcat.apache.org/)
 
 ## TO-DO
 * [ ] Finish updating Ticket Controller and Views.
